@@ -1,0 +1,2624 @@
+c - syllabus
+Introduction
+History
+Application,merits and demerits or Features of c
+Basic structure and excution of
+c program
+C Tokens
+Data types and input/output operators
+Working with variables
+Constants
+Operators
+Control Statements
+   1.Decision Making
+   2.Iterative Statements
+   3.Control Flow Statements
+Arrays
+Strings
+Functions
+Storage Classes
+Pointers
+DMA (Dynamic memory allocation)
+Structures
+Unions
+File Management
+-----------------------------
+Introduction:
+C is a powerful general purpose programming
+language.
+it can be used to develop software like 
+operating systems,databases,compilers,and so on,
+C programming is an excellent language.
+
+c programming is developed by "dennis ritchie"
+creating system application that directly 
+interact with the hardware devices such as 
+drivers,kernels,etc.
+
+mother language
+system programming language
+procedure oriented programming language
+structured programming language
+mid level programming language.
+--------------------------------------
+History:
+c programming language was developed in
+1972 by Dennis Ritchie at bell labratories
+of AT&T(American Telephone & Telegraph)
+, location in the USA.
+
+Dennis Ritchie is known as the founder 
+of the c language.
+it was developed to overcome the
+problems of previos languages such as 
+B,BCPL,etc.
+
+Language       year           developed by
+Algol          1960            international group
+Bcpl           1967            Martin Richard
+B              1970            Ken Thompson
+Traditional c  1972            Dennis Ritchie
+K & R C        1978            kernighan & Dennis Ritchie
+ANSI c         1989            ANSI committee
+ANSI/ISO C     1990            ISO committee
+C99            1999            Standardization committee
+
+---------------------------------------------
+Features:
+c is the widely used language,It provides many
+features.
+Simple
+Machine Independent or protable
+Mid level programming language
+Structured programming language
+Rich Library
+Memory Management
+Fast Speed
+Pointers
+Recursion 
+Extensible
+---------------------------------------
+comments:
+they are two types
+1.single line comments
+ex:
+syntax:
+//->this is called single line comments
+
+2.multi line comments
+ex:
+syntax:
+/* this
+    is 
+    called 
+    multi
+    line
+     comment
+*/
+-------------------------------
+escape characters :
+\n ->newline
+\t ->tab
+\b ->backspace
+\a ->beapsound
+
+wap to print
+world
+wide
+web
+#include<stdio.h>
+void main()
+{
+ printf(" world \n wide \n web");
+
+}
+-----------------------------
+wap to print world  wide web
+
+#include<stdio.h>
+void main()
+{
+ printf("world \t wide \t web");
+
+}
+----------------------------------
+wap to print 
+i   
+       like
+               clanguage
+
+code:
+#include<stdio.h>
+void main()
+{
+ printf(" I \n\t Like \n\t\t Clanguage");
+
+}
+
+backspace code :
+#include<stdio.h>
+void main()
+{
+ printf(" I \n\t Like \n\t\b\b\b Clanguage");
+
+}
+
+-------------------------------
+C Tokens :
+1.Keywords
+2.identifiers
+3.strings
+4.operators
+5.constant
+6.special characters
+
+Keywords: 
+auto 
+break
+case
+char
+const
+continue
+default
+do
+double
+int 
+struct
+else
+long
+switch
+enum
+extern
+float
+for
+goto 
+if
+register
+return
+short
+signed
+sizeof
+static
+typedef
+union
+unsigned
+void
+while
+---------------------------
+Identifiers:
+identifiers are used for naming variables, functions,
+arrays,structures,etc.
+--------------------------
+Strings:
+it is represented an array of characters having null 
+character '\0' at the end of the string.
+
+ex:
+char a[5]="hello" ;
+-----------------------------------
+Operators:
+1.Unary Operators
+2.Binary Operators
+3.ternary or conditional Operators
+
+Unary Operators:
+++ Increment oper
+-- decrement oper
+
+Binary Operators:
+1.Arithmetic opera :  +,-,*,/,%
+2.Relational opera :  <,>,<=,>=,==,!=
+3.Assignment opera :  =,+=,-=,*=,/=,%=
+4.shift opera      : <<,>>
+5.bitwise opera    : &,|,!,
+6.logical opera    : &&,||,!
+
+ternary or conditional Operators: 
+?  :
+
+constant:
+a constant is a value assigned  to the variable which will remain 
+the same throughout the program.
+i.e., the constant value be changed.
+there are 2 ways of declaring constant:
+Using const keyword 
+Using #define pre-processor
+
+types of constants 
+constants                      examples
+integer constant               10,25,500,...etc
+Floating-point constant        4.33,125.25,.....etc
+character constant             'a','x','z'....etc
+string constant                "java","python","sql",....etc
+
+special characters:
+they have a special meaning which cannot be used for another purpose.
+
+Square brackets[] : the opening and closing brackets represent and
+function calling.
+
+simple brackets(): it is used in function declaration and function 
+calling simple brackets.
+ex:printf() it is a pre-defined function.
+
+curly braces{}: it is opening and closing of the code and loops.
+
+comma , : it is used for separating for more than one statement.
+
+hash # : it is used to represent processor directive. it basically 
+denotes that we are using the header file.
+
+Asterisk(*) : this symbol is used to represent pointers and also used 
+as an operator for multiplication.
+
+Tilde(~): it is used as a destructor to free memory.
+
+period(.): it is used to a member of a  structure or a union.
+-----------------------------------------------------------------
+
+printf() and scanf() :
+
+printf() : The printf() function  is used for output .it prints the
+given statement to the console.
+
+syntax:
+prinf("some text");
+
+Scanf() : the scanf() function is used for input . it reads the 
+input data from the console.
+
+syntax:
+int a,b;
+printf("enter num :");
+scanf("%d %d",&a,&b);
+printf("%d",a+b);
+
+-----------------------------------------------------
+variables:
+A variable is a name of the memory location. it is used to store data.
+it's value can be changed, and it can be reused many times.
+
+it is represent memory location through symbol so that it can be
+easily identified.
+
+syntax:
+datatype variable_list;
+
+int a;
+float b;
+char y;
+
+int a=10;
+float z=125.33;
+char c='A';
+
+rules for defining variables:
+
+A variable can have alphabets,digits,and underscore.
+A variable name can start with the alphabets,and underscore only.
+it can't start with  a digit.
+
+No whitespace is allowed within the variable name.
+
+A variable name must  not be any reserved word or keyword.eg:int,float,etc..
+
+
+valid variable name :
+int a;
+int _ab;
+int a20;
+
+invalid variable name :
+int 9;
+int a b;
+int long;
+
+----------------------------------------
+types of variables:
+there are many types of variables in c.
+
+1.Local variables
+2.Gobal variables
+3.static variables
+4.automatic variables
+5.external variables
+
+syntax:
+
+type  variable_list;
+datatype varaiablename = variable value;
+
+
+ex:
+int a=12;  //declaring variables
+float b=3.2;
+char c='a';
+
+Local variables:
+
+void main(){
+int a=5; //local variables
+}
+
+Gobal variables:
+
+int value=20; //gobal variable
+void main(){
+int y=20; //local variable
+}
+
+static variables:
+
+void main(){
+int x=2; //lv
+static int y=10; //sv
+x=x+1;
+y=y+1;
+print("%d%d",x,y);
+}
+
+automatic variables:
+
+void main(){
+int x=10;
+auto int y=20;
+}
+
+external variables:
+
+extern int x=25; //external variables(also gobal )
+
+-----------------------------------------------------------------
+Data types:
+primitive data type
+derived data type
+user defined
+
+primitive data type:
+1.char
+2.int
+3.float
+4.double
+
+derived data type:
+1.array 
+2.pointer
+3.function
+
+user defined:
+1.enum
+2.structure
+3.union
+
+dt               size            range           formatstring
+char              1          -128 to 127              %c
+short             2          -32768to 32768           %d
+int               2          -32768to 32768           %d
+long              4          -2e8 to 2e8-1            %ld
+float             4          -3.4e-38 to 3.4e-38      %f
+double            8          -47e-308 to 47e+308      %f
+longdouble        10         -3.4e-4932 to 1.1e+4932  %Lf
+
+ code :
+int: 
+
+#include <stdio.h>
+
+void main()
+{
+  int a=5,b=22;
+  printf("%d",a+b);
+}
+-------------------------------
+long:
+#include <stdio.h>
+
+void main()
+{
+  long  a=5,b=22;
+  printf("%ld",a+b);
+}
+
+--------------------------------
+float :
+#include <stdio.h>
+
+void main()
+{
+  float a=5.34,b=22.6;
+  printf("%f",a+b);
+}
+
+---------------------
+double:
+#include <stdio.h>
+
+void main()
+{
+  double a=5.304,b=22.6;
+  printf("%f",a+b);
+}
+
+-----------------------
+long double:
+#include <stdio.h>
+
+void main()
+{
+  long double a=5.46496844696846304,b=22.6;
+  printf("%Lf",a+b);
+}
+----------------------------------
+short:
+#include <stdio.h>
+
+void main()
+{
+  short  a=32767,b=1;
+  printf("%d",a+b);
+}
+---------------------------
+char:
+#include <stdio.h>
+
+void main()
+{
+  char a='a';
+  printf("%c",a);
+}
+-------------------------------
+string :
+#include <stdio.h>
+
+void main()
+{
+  char a[]="java";
+  printf("%s",a);
+}
+----------------------------------------------
+Operators:
+An operator is a symbol that operates on a variable or value.
+It is used for performing certain operations like arithmetical,logical,relational,
+etc.
+
+1.Unary operator
+2.Binary operator
+3.Ternary operator
+
+Unary operator:
+Increment operator: ++
+
+#include <stdio.h>
+
+void main()
+{
+ int a=6;
+ printf("%d",++a);
+}
+--------------------------
+Decrement operator: --
+
+#include <stdio.h>
+
+void main()
+{
+ int a=6;
+ printf("%d",--a);
+}
+---------------------------
+Binary operator:
+1.Arithmatic operator
+2.Assignment operator
+3.Relational operator
+4.Logical operator
+5.Bitwise operator
+
+Arithmatic operator: +,-,*,/----questiont,%---->remainder
+
+
+#include <stdio.h>
+
+void main()
+{
+    int a=10,b=20;
+    printf("%d\n",a+b);
+    printf("%d\n",a-b);
+    printf("%d\n",a*b);
+    printf("%d\n",a%b);
+    printf("%d\n",a/b);
+}
+----------------------------------
+
+#include <stdio.h>
+
+void main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("%d\n",a+b);
+    printf("%d\n",a-b);
+    printf("%d\n",a*b);
+    printf("%d\n",a%b);
+    printf("%d\n",a/b);
+}
+-----------------------------
+Assignment operator: =,+=,-=,*=,/=,%=
+
+#include<stdio.h>
+void main()
+{
+    int a=2,b;
+    b=a;
+    printf("%d\n",b);
+    b+=a;
+    printf("%d\n",b);
+    b-=a;
+    printf("%d\n",b);
+    b*=a;
+    printf("%d\n",b);
+    b/=a;
+    printf("%d\n",b);
+    b%=a;
+    printf("%d\n",b);
+
+}
+----------------------------
+Relational operator: <,>,<=,>=,==,!=
+
+#include<stdio.h>
+void main()
+{
+    int a=2,b=5;
+    printf("%d\n",a==b);
+    printf("%d\n",a!=b);
+    printf("%d\n",a<b);
+    printf("%d\n",a>b);
+    printf("%d\n",a<=b);
+    printf("%d\n",a>=b);
+}
+--------------------------------
+Logical operator:
+
+&& - logical and
+|| - logical or
+!  - logical not
+
+#include<stdio.h>
+void main()
+{
+    int a=2,b=5;
+    printf("%d\n",(a!=b)&&(a<=b)); //logical and
+    printf("%d\n",(a==b)||(a<=b)); //logical or
+    printf("%d\n",!(a==2));// logical not
+}
+
+-----------------------------
+Bitwise operator: &,|,<<,>>,~,^
+
+& - bitwise and
+| - bitwise or
+^ - bitwise xor
+<< - left shift
+>> - right shift,
+~ - bitwise not
+
+#include<stdio.h>
+void main()
+{
+    int a=2,b=6; 
+    printf("%d\n",a & b); //bitwise and
+    printf("%d\n",a | b); //bitwise or
+    printf("%d\n",a << b); //bitwise left
+    printf("%d\n",a >> b); //bitwise right
+   
+}
+--------------------------
+Ternary operator: ?:
+
+
+#include<stdio.h>
+void main()
+{
+    int a,b,big;
+    printf("enter num : ");
+    scanf("%d%d",&a,&b);
+    big=(a>b)?a:b;
+    printf("%d\n",big);
+    
+}
+----------------------------------
+Control Statements:
+ Decision Making or conditional statements :
+ conditional statement is a feature of  programming language which allows it to 
+ perform actions depending upon some conditional  provided by the programmer.
+ conditional statement controls the sequence of statements denpding on the condition.
+ 
+ if
+ if else
+ if else if or else if or ladder if
+ nested if
+
+if :
+syntax:
+if(conditional)
+{
+statement;
+}
+
+code:
+
+#include <stdio.h>
+
+void main()
+{
+int n;
+printf("enter num : ");
+scanf("%d",&n);
+if(n%2==0)
+{
+    printf("even");
+}
+}
+---------------------------------------------
+ if else:
+
+syntax:
+if(condition)
+{
+statements;
+}
+else
+{
+statements;
+}
+
+code:
+
+#include <stdio.h>
+
+void main()
+{
+int year;
+printf("enter year : ");
+scanf("%d",&year);
+if(year%4==0)
+{
+    printf("leap year");
+}
+else
+{
+    printf("non leap year");
+}
+}
+
+----------------------------
+Multi condition if:-
+else if:
+
+syntax:
+if(condition1)
+{
+statements1;
+}
+else if(condition2)
+{
+statement2;
+}
+else if(condition3)
+{
+statements3;
+}
+.............
+
+else if(conditionN)
+{
+statementsN;
+}
+else
+{
+statements;
+}
+
+code:
+#include<stdio.h>
+void main()
+{
+    int a=10,b=10,c=15;
+    if(a>b)
+    {
+        printf("a greater than b ");
+    }
+    else if(b>c)
+    {
+        printf("b greater than c ");
+    }
+    else if(a>c)
+    {
+        printf("a greater than c ");
+    }
+    else
+    {
+        printf("c greater than a,b ");
+    }
+}
+----------------------------------------------------------------
+nested if:
+syntax:
+if(condition1) //outter if
+ {
+  if(condition2) //inner if
+   {
+    statements;
+   }
+  else
+   {
+     statement;
+   } //inner if
+}//outer if
+else
+{
+statements;
+}
+
+code:
+#include<stdio.h>
+void main()
+{
+    int a=25,b=75;
+    if(a>50)
+    {
+        if(a==51)
+        {
+            printf("equal");
+        }
+        else
+        {
+            printf("not equal");
+        }
+        
+    }
+    else
+    {
+        printf("invalid");
+    }
+}
+-----------------------------------------------------
+Iterative Statements or Looping statements:
+the looping can  be defined as repating the same process multiple times until a 
+specific condition satifies.
+there are 3types of loops:
+while 
+do-while
+for
+
+
+for Loop:for loop is same as while loop
+syntax
+for(int;cond;++ or --)
+{
+st;
+}
+
+code:
+#include<stdio.h>
+void main()
+{
+    int i;
+    for(i=10;i>=1;i--)
+    {
+        printf("%d \n",i);
+    }
+}
+----------
+for code:
+#include<stdio.h>
+void main()
+{
+    int i;
+    for(i=10;i>=0;i--)
+    {
+        printf("%d \n",i);
+    }
+}
+------------------------------------------------------------------------
+while loop:first condition get checked and then program get excuted
+syntax:
+
+init val;
+while(condi)
+{
+st;
+++
+}
+
+code:
+method1 : 1 to 10 num
+
+#include<stdio.h>
+void main()
+{
+    int i=0;
+    while(i<=10)
+    {
+        printf("%d \n",i);
+        i++;
+    }
+}
+
+method2 : 10 to 0 num
+
+#include<stdio.h>
+void main()
+{
+    int i=10;
+    while(i>=0)
+    {
+        printf("%d \n",i);
+        i--;
+    }
+}
+
+----------------------------------------------------------
+do-while:first body get exicuted and then condition get checked
+note :- semicolon dosen't exist in while loop.
+syntax:
+init val;
+do{
+st;
+++
+}while(cond);
+
+code:
+method1:
+#include<stdio.h>
+void main()
+{
+    int i=0;
+    do
+    {
+        printf("%d \n",i);
+        i++;
+    }while(i<=10);
+}
+
+method2:
+#include<stdio.h>
+void main()
+{
+    int i=10;
+    do
+    {
+        printf("%d \n",i);
+        i--;
+    }while(i>=10);
+}
+
+-----------------------------------------------------------------
+logic oriented programming:-
+sum logic
+count logic
+digit logic
+factor logic
+prime number
+perfect number
+Amstrong number
+fibinoccti series
+pattern logic
+factoal of a number
+--------------------------------------------------------------------------------
+Sum logic:-
+hints
+int s=0;
+s=s+n;
+WAP to print sum of first 20 numbers 
+
+Code:-
+
+int i,s=0;
+for(i=1;i<=20;i++)
+{
+s=s+i;
+}
+printf("sum=%d",s);
+
+WAP to print sum of even numbers from 1 to 30?
+
+int i,s=0;
+for(i=1;i<=30;i++)
+{
+if(i%2==0)
+s=s+i;
+}
+printf("sum=%d",s);
+
+WAP to print sum of multiples of 3 ?
+-----------------------------------------------------------------------
+count logic:-
+int c=0;
+c++;
+
+code:-
+int i,c=0;
+for(i=1;i<=20;i++)
+{
+if(i%2==0)
+c++;
+}
+printf("count=%d",c);
+
+WAP to print count of multiples of 5 ?
+---------------------------------------------------------------------------------
+Digit logic:-The process of exctracting individual digits of a number.
+exp:-
+1234
+4321
+
+Usage:-
+while(n>0)
+{
+//get digit
+d=n%10; 
+
+//reduce number
+n=n/10;
+}
+WAP to read a number and print it's digit?
+
+int n,d;
+printf("Enter number:");
+scanf("%d",&n);
+while(n>0)
+{
+d=n%10;
+printf("%d",d);
+n=n/10;
+}
+-----------------------------------------------------
+Factor logic:-
+condition:-
+
+for(i=1;i<=n;i++)
+{
+if(n%i==0)
+// is a factor
+}
+WAP to read a number and print its factor?
+
+int n,i;
+printf("Enter number:");
+scanf("%d",&n);
+// find factors
+for(i=1;i<=n;i++)
+{
+if(n%i==0)
+printf("factors=%d\n",i);
+}
+-------------------------------------------------------------------------------
+WAP to read a number and print factor count
+int n,i,c=0;
+printf("Enter number:");
+scanf("%d",&n);
+// find factors
+for(i=1;i<=n;i++)
+{
+if(n%i==0)
+c++;
+}
+printf("factor count=%d\n",c);
+---------------------------------------------------------------------------
+Prime number:-which is dived by 1 and itself it is known as prime number.
+it have 2 factors
+
+WAP to read a number and test for prime number or not?
+
+int n,i,fc=0;
+printf("Enter number:");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+if(n%i==0)
+fc++;
+}
+printf("fcator count%d\n",fc);
+if(fc==2)
+printf("%d is not a prime number",n);
+else
+printf("%d is not a prime number",n);
+--------------------------------------------------------------------------------
+Perfect number:-Sum of factors of a number makes the number itself by excluding the given number.
+
+WAP to read a number and test perfect umber or not?
+
+ int n,i,fs=0;
+printf("Enter number:");
+scanf("%d",&n);
+for(i=1;i<n;i++)
+{
+if(n%i==0)
+fs=fs+i;
+}
+
+if(fs==n)
+
+printf("%d is a perfect number",n);
+else
+printf("%d is not a perfect number",n);
+--------------------------------------------------------------------------------------
+Armstrong number:-
+                 Sum of cubes of individual digit of anumber makes the number itself.
+ex:-
+153
+1(3)+5(3)+3(3)
+1+125+27
+
+WAP to read a number and test for Armstrong number or not.
+
+int n,m,d,s=0;
+printf("Enter number:");
+scanf("%d",&n);
+m=n;
+while(n>0)
+{
+// get digit
+d=n%10;
+s=s+d*d*d;
+//reduce digit
+n=n/10;
+}
+if(s==m)
+printf("%d it is armstrong number",m);
+else
+printf("%d it is not a armstrong number",m);
+-----------------------------------------------------------------------------
+Factorial of a number:-
+usage:-
+f=1;
+for(i=1;i<=4;i++)
+{
+f=f*i;
+}
+WAP to read a number print it's factorial
+int n,i,f;
+//read number
+printf("Enter number:");
+scanf("%d",&n);
+f=i;
+for(i=1;i<=n;i++)
+{
+f=f*i;
+}
+printf("factorial is:%d",f);
+-------------------------------------------------
+Fabinocci series:-
+0112358----
+note:- Sum of previous two terms will be the next sum
+
+WAP to print fabinocci series up to given terms
+
+int i,t1,t2,nth,terms;
+//read number
+printf("Enter number of terms:");
+scanf("%d",&terms);
+
+t1=0;
+t2=1;
+i=1;
+while(i<=terms)//3
+{
+printf("%d\t",t1);
+nth=t1+t2;//nth=3
+//inter change
+t1=t2;//t1=2
+t2=nth;//t2=3
+i++;
+}
+-----------------------------------------------
+Nest for:
+Syntax:
+
+for(init1;cond1;++ or --) //outer for loop
+{
+for(init2;cond2;++ or --) // inner for loop
+{
+st;
+}//inner
+st;
+}//outer
+
+code :
+#include<stdio.h>
+void main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+}
+
+------------------
+#include<stdio.h>
+void main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+}
+-----------------------------
+#include<stdio.h>
+void main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+}
+---------------------------------
+#include<stdio.h>
+void main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+}
+-------------------------------------
+#include<stdio.h>
+void main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+-----------------------------------------
+Control Flow Statements:
+
+break
+contiune
+goto
+
+break:
+syntax: loop or switch case
+         break;
+
+code:
+#include<stdio.h>
+void main()
+{
+    int i;
+    for(i=0;i<=10;i++)
+    {
+        printf("%d\n",i);
+        if(i==5)
+        break;
+    }
+}
+-------------------------------------
+continue:
+syntax: loop
+        continue;
+
+code:
+
+#include<stdio.h>
+void main()
+{
+    int i;
+    for(i=0;i<=10;i++)
+    {
+        printf("%d\n",i);
+        if(i==5)
+       continue;
+    }
+}
+-------------------------------
+goto:
+syntax://some part of the code;
+       goto label;
+code:
+
+#include<stdio.h>
+void main()
+{
+   int n,i=1;
+   printf("enter the num ");
+   scanf("%d",&n);
+   table:
+   printf("%d x %d =%d\n",n,i,n*i);
+   i++;
+   if(i<=10)
+   goto table;
+}
+------------------------------------------------------------
+switch case
+
+syntax:
+
+switch(var)
+{
+case1 : sta;
+break;
+
+case2 : sta2;
+break;
+
+case3 : sta3;
+break;
+
+case4 : sta4;
+break;
+.............
+caseN : staN;
+break;
+
+defualt : st;
+break;
+}
+
+code:
+
+#include<stdio.h>
+void main()
+{
+   int d;
+   printf("enter weekend day num :");
+   scanf("%d",&d);
+   switch(d)
+   {
+       case 1 : printf("Mon");
+       break;
+       case 2 : printf("Tue");
+       break;
+       case 3 : printf("Wed");
+       break;
+       case 4 : printf("Thu");
+       break;
+       case 5 : printf("Fri");
+       break;
+       case 6 : printf("Sat");
+       break;
+       case 7 : printf("Sun");
+       break;
+       default : printf("choose enter 1 to 7 in weekend days");
+       break;
+   }
+    
+}
+-----------------------------------------------------------------
+Array:
+Arrays are used to store multiple values in a single variable, instead of 
+declaring separate variables for each value..
+
+Single dimentional array:-
+syntax:
+datatype array_name[array_size];
+
+WAP to creare single dimention of array and print all the dimentions of array
+code:-
+
+int a[5]={6,4,9,12,15},i;
+for(i=0;i<5;i++)
+{
+printf("%d",a[i]);
+}
+**Dynamic array**
+code:-
+
+int a[5],i;
+//read elements into array
+for(i=0;i<5;i++)
+{
+printf("Enter a[%d]:",i);
+scanf("%d",&a[i]);
+}
+
+WAP to create dynamic array and display it's elements
+
+int a[5],i;
+//read elements into array
+for(i=0;i<5;i++)
+{
+printf("Enter a[%d]:",i);
+scanf("%d",&a[i]);
+}
+//display elements
+for(i=0;i<5;i++)
+printf("%d",a[i]);
+----------------------------------------------
+Logics on array elements:-
+1)sum of array elements.
+2)avg of array elements.
+3)biggest/max of array elements.
+4)smallest/min of array elements.
+5)search for array elements.
+6)sort array elements.
+7)Reverse array elements.
+
+1)Sum of array elements.
+s=0;
+s=s+a[i];
+code:-
+WAP toread array elements and print there sum and average
+int a[5],i,s=0;
+//read elements into array
+for(i=0;i<5;i++)
+{
+printf("Enter a[%d]:",i);
+scanf("%d",&a[i]);
+}
+//display elements
+for(i=0;i<5;i++)
+{
+s=s+a[i];
+}
+printf("%d",s);
+float avg=s/5;
+printf("Avg=%d",avg);
+----------------------------------------
+3)biggest/max of array elements.
+int max=0;
+for(i=0;i<5;i++)
+{
+if(a[i]>max)
+max=a[i];
+}
+
+WAP to read set of elements into array amd display biggest number of an array
+
+int max=0,a[5],i;
+for(i=0;i<5;i++)
+{
+printf("Enter a[%d]:",i);
+scanf("%d",&a[i]);
+}
+for(i=0;i<5;i++)
+{
+if(a[i]>max)
+max=a[i];
+}
+printf("Biggest element is:%d",max);
+
+-------------------------------------------------
+4)smallest/min of array elements.
+
+int min=a[0];
+for(i=0;i<5;i++)
+{
+if(a[i]<min)
+min=a[i];
+}
+------------------------------
+WAP to read set of elements into array amd display smallest number of an array
+
+int min,a[5],i;
+for(i=0;i<5;i++)
+{
+printf("Enter a[%d]:",i);
+scanf("%d",&a[i]);
+min=a[0];
+}
+for(i=0;i<5;i++)
+{
+if(a[i]<min)
+min=a[i];
+}
+printf("Smallest element is:%d",min);
+---------------------------------------------------------------
+***Find/Search for element in array ***
+Usage:-
+if(a[i]==e)
+{
+flag=1;
+break;
+}
+
+WAP to search an element in an array
+code:-
+int a[5]={21,90,78,45,23},i,flag,e;
+printf("Enter element to find:");
+scanf("%d",&e);
+flag=0;
+for(i=0;i<5;i++)
+{
+if(a[i]==e)
+{
+flag=1;
+break;
+}//if
+}//for
+if(flag==1)
+printf("Element found");
+else
+printf("Element not found");
+
+----------------------------------------------------------------
+**Swapping number**
+Usage:-
+temp=x;
+x=y;
+y=temp;
+
+WAP to read x,y values before swaping and after swaping
+Code:-
+int x=74,y=87,temp;
+printf("x=%d\ty=%d\n",x,y);
+//swaping logic
+temp=x;
+x=y;
+y=temp;
+printf("x=%d\ty=%d",x+y);
+----------------------------------------------------------------
+** sorting an array**
+
+Bubble sort:-
+-->In this tech elements 1 position get's compared with another element.
+-->it comparision is satisfid then the inter changing of elements are takes.
+
+Usage:-
+for(i=0;i<5;i++)
+{
+for(j=i+1;j<5;j++)
+{
+if(a[i]>a[j])
+}
+}
+
+WAP to read 5 elements into array and display array elements before sorting and after sortiing
+code:-
+int a[5],i,j,temp;
+//read elements
+for(i=0;i<5;i++)
+{
+
+printf("enter a[%d]:",i);
+scanf("%d",&a[i]);
+}
+//display 
+printf("before sorting \n");
+for(i=0;i<5;i++)
+printf(%d),a[i]);
+//sorting elements
+for(i=0;i<5;i++)
+{
+for(j=i+1;j<5;j++)
+{
+if(a[i]>a[j])
+{
+//swap
+temp=a[i];
+a[i]=a[j];
+a[j]=temp;
+}
+}
+}
+printf("After sorting:\n");
+for(i=0;i<5;i++)
+printf("%d",a[i]);
+-----------------------------------------------------------
+WAP to coopy one array element into another array 
+Code:-
+int a[5]={78,100,45,23,19},b[5],i;
+for(i=0;i<5;i++)
+{
+b[i]=a[i];
+}
+for(i=0;i<5;i++)
+printf("Another array b[i]:%d\n",b[i]);
+-----------------------------------------------------------------
+WAP to reverse array elements
+Code:-
+int a[5]={45,90,67,12,17},b[5],i,j;
+for(i=4;j=0;i>=0;i--;j++)
+{
+b[j]=a[i];
+}
+//display reversed array
+for(i=0;i<5;i++)
+{
+printf("%d\n",b[i]);
+}
+---------------------------------------------------------------
+*** String handling/char based single dimentional array ***
+string:- It's a collection of characters used to represent.
+ex:-
+name
+post
+review
+email
+etc
+
+** representing of string in array **
+---->char st1[30];
+---->char st2[40]="Welcome";
+
+*** maniplation ***
+--->string length
+--->string copy
+--->string concatination
+--->string comparision
+--->string reverse
+
+*** string.h ***
+--->It contains built in function to copy one string into another string and manipulate with string.
+
+Usage:-
+#include<string.h>
+--->get length of the string
+
+***strlen(st)***
+these returns length of the string.
+Ex:-
+int l=strlen("vision");
+
+*** Copying the string***
+strcpy(st1,st2)
+--->it copyes(st2)value into st1.
+
+*** concatination of string ***
+strcat
+--->These function concatinate a st2 into value to st1
+ex:-
+
+#include<string.h>
+char st1[10],st2[10]="java",st3="server";
+printf("%d\n",strlen(st3));
+strcpy(st1,st2);
+printf("after copy %s\n",st1);
+strcat(st2,st3);
+printf("After concatination%s\n",st2);
+-------------------------------------------------------------------
+*** String comparision***
+--->it compares both the strings based on the ASCII key values and return as
+0(st1==st2)
+-1(st1<st2)
+1(st1>st2)
+ WAP to read two stringsand compare them
+
+char st1[10],st2[10];
+printf("enter two strings:");
+scanf("%s",st1,st2);
+if(strcmp(st1,st2)==0)
+printf("both the strings are same");
+else if(strcmp(st1,st2)>0)
+printf("both the strings are different")
+-----------------------------------------------------
+***Reverse the string ***
+Usage:-
+strrev(str);[java, avaj]
+--->it reverse the given string and print the same.
+char st[10]="java";
+-----------------------------------------------------
+***Double dimentional array***
+--->An array that was declared with 
+    a[3][3];
+ rows,columns
+*** Applications****
+--->This represent two  matrix table.
+**** Decleration of double dimention array***
+int a[3][3];
+
+With initialization
+int a[3][3]={{4,5,6},{1,2,3},{7,8,9}};
+
+**Addressing double dimention array elements**
+1   2    3
+4    5   6
+7    8   9
+a[0][0]    a[1][0]    a[2][0]
+a[0][1]    a[1][1]    a[2][1]
+a[0][2]    a[1][2]    a[2][2]
+
+Note:- nested for loop is used for manipulate with double dimentional array.
+ for(i=0;i<5;i++)
+ {
+for(j=0;j<5;j++)
+{
+a[i][j];
+}
+}
+ Example:-
+WAP to print double dimentional array elements.
+int main()
+{
+int i,j;
+int a[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+//row
+ for(i=0;i<5;i++)
+ {
+printf("\n");
+for(j=0;j<5;j++)
+{
+printf("%d",a[i],[j]);
+}
+}
+}
+
+**Read elements into 2d array***
+int a[3][3];
+scanf("%d",&a[i][j]);
+
+WAP to read elements into 2d array static and display the same.
+
+int a[3][3]={{1,2,3},{4,5,6},{7,8,9}},i,j;
+//row
+ for(i=0;i<5;i++)
+ {
+for(j=0;j<5;j++)
+{
+printf("%d",a[i][j]);
+}
+printf("\n");
+}
+-------------------------------------------------------------------------------------
+WAP to read elements into 2d array dynamically and display the same.
+
+int a[3][3],i,j;
+//row
+ for(i=0;i<3;i++)
+ {
+for(j=0;j<3;j++)
+{
+printf("Enter a[%d][%d]:");
+scanf("%d",a[i],[j]);
+}
+}
+ for(i=0;i<3;i++)
+ {
+for(j=0;j<3;j++)
+{
+printf("%d",a[i][j]);
+}
+printf("\n");
+}
+------------------------------------------------------------------
+WAP to print forward diognal matrix
+1  0  0
+0  1  0
+0  0  1
+int a[3][3],i,j;
+for(i=0;i<3;i++)
+{
+for(j=0;j<3;j++)
+{
+if(i==j)
+a[i][j]=1;
+else
+a[i][j]=0;
+}
+}
+//dispaly matrix
+for(i=0;i<3;i++)
+{
+for(j=0;j<3;j++)
+{
+printf("%d",a[i][j]);
+}
+printf("\n");
+---------------------------------------------------------
+WAP to print reverse diagonal matrix
+0  0  1
+0  1  0
+1  0  0
+if((i+j)==2)
+a[i][j]=1;
+-----------------------------------------------------------
+*Matrix addation*
+c[i][j]=a[i][j]+b[i][j]
+
+ int a[2][2]={{10,13},{5,6}},b[2][2]={{9,6},{7,8}},i,j,c[i][j];
+for(i=0;i<3;i++)
+{
+for(j=0;j<3;j++)
+{
+c[i][j]=a[i][j]+b[i][j];
+}
+}
+//dispaly matrix
+for(i=0;i<3;i++)
+{
+for(j=0;j<3;j++)
+{
+printf("%d  ",c[i][j]);
+}
+printf("\n");
+}
+-----------------------------------------------------
+*character based double dimention array*
+--->collection of string are known as double dimention array  
+char city[10];//city name
+char[5][10];//5city names
+*Addressing individual strings*
+city[0]
+city[1]
+ex:-
+char st[2][10];
+printf("Enter st1:");
+scanf("%s",st[0]);
+printf("Enter st2:");
+scanf("%s",st[1]);
+printf("%s--------------%s",st1[0],st2[1]);
+------------------------
+*Multi dimention array*
+          an array that definied with more than two dimentions is knowen as multidimentional array.
+ex:-intn[3][2][2];
+*need*
+----> it is to represent high daa that contains branches and notes
+----------------------
+3 dime array :
+syntax:
+data_type array_name[table][row][column];
+
+code:
+#include<stdio.h>
+void main()
+{
+    int a[1][2][3]={{{111,222,333},{444,555,666}}};
+    printf("%d",a[0][0][1]);
+}
+----------------------------
+#include<stdio.h>
+void main()
+{
+    int a[2][2][2]={{{11,22},{33,44}},{{55,66},{77,88}}};
+---+    printf("%d",a[1][1][1]);
+}
+--------------------------------
+**FUNCTIONS**
+Function definition:-
+                               This is used to decress the complexicity and length of the program.
+**Advantages**
+-->Reusability.
+-->Logic seperation from the main program.
+-->Decrease the length of the program.
+
+**Features of the Function**
+-->it is function that never executed by default.
+-->It gets executed on calling /using the subfunction from main function.
+-->every function contain two
+     function body                 function signature
+    logic                                        name
+    task                                          Arguments parameters functions
+                                                    Return value
+
+example on function:-
+void sum()
+{
+int a,b,sum=0
+printf("Enter two n umbers:");
+scanf("%d%d",&a,&b);
+sum=a+b;
+printf("sum==%d\n",sum);
+}
+void main()
+{
+sum();
+}
+--------------------------------------------------------
+**Types of functions**
+-->Function with arguments, With return value
+-->Functions with argument, without return value
+-->Function without arguments, with return value
+-->Function without arguments, without return value
+------------------------------------------------
+**Function with arguments, With return value**
+-->this function body contain's return statement
+Usage:-
+Define function before main()
+return datatype fun name(datatype arguments, datatypes arguments2)
+{
+----------
+----------
+----------
+return xxxx;
+}
+-->Call/Use function in main()
+ex:-That returns product of two numbers
+//define subfunction
+int product(int a,int b)
+{
+int p=a*b;
+return p;
+}
+int main()
+{
+int r=product(30,40);//static value call
+printf("product1=%d\n",r);
+int x=10,y=40;
+r=product(x,y);//call by value/pass by value
+printf("product2=%d",r);
+}
+-----------------------------------------------------------------------------------------------
+**Define a subfunction that return biggest of numbers.**
+//define subfunction
+int max(int a,int b)
+{
+if(a>b)
+return a;
+else
+return b;
+}
+//call the function(main())
+int main()
+{
+int=100,y=44;
+printf("%d",max(x,y));
+}
+----------------------------------------------------
+Define a subfunction that returns biggest of 3 numbers?
+Define a subfunction area,perimeter of circle that taken by radius as arguments?
+Define a subfunction that computes simple interest by taking p,t,r as arguments?
+-----------------------------------------------------------
+II Function with arguments , with out return value.
+---->These function boudy doesnot contain return value statement it is used to perform the task.
+void function name(datatype argument1,datatype argument2)
+{
+
+
+}
+//function call
+function name(vall,-------);
+
+Define a subfunction that wishes the name which is passed as arguments 
+
+int  wish(char nm[])
+{
+printf("hello:%s\n",nm);
+}
+int main()
+wish("prathyusha");
+-----------------------------------------------------
+Define a subfunction that swaps two given integers
+Define a subfunction that joins three stings passed as arguments
+--------------------------------------------------------------
+III**Function without arguments with return vallue**
+-->These definition is prefered to provid information
+example:-
+get pi()
+get width()
+get color()
+
+-->These function body contains freturn statement
+float getpi()
+{
+return 3.14;
+}
+int main()
+{
+printf("%f",getpi());
+}
+------------------------------------------------------------
+IV**function with out arguments ,with out return value**
+-->These definition is prefered to offer a fixed logic
+ex:-clr scr();
+Define a sub function that draw a line
+void drawline()
+{
+printf("----------------------------");
+}
+int main()
+{
+drawline();
+printf("\nHello World\n");
+drawline();
+}
+-------------------------------------------------------------------------------
+**Pointer**
+-->It is a special variale that stores memory address of program data.
+**Advantage**
+-->fast processing.
+-->Working with address instead of variable names which makes direct intraction with H/W
+--<>Arrays usage with address instead of index
+-->pass by address(fun)
+-->Return more than one value(array)
+-->Dynamic memory allocation(DMA)
+-->usage of complex data structure
+1)*,& these two opporators are used two to work with pointers
+ 
+
+Storage Classes :
+A storge classes defines the scope(visibility) and life-time of variables and/or 
+functions within a c program. They piece the type that they modify.
+we have 4 different storage classes.
+1.auto Storage Classes
+2.register Storage Classes
+3.static Storage Classes
+4.extern Storage Classes
+
+Auto Storage Classes :
+The auto storage class is the defualt storage class for all local variables.
+
+syntax:
+{
+int mth;
+auto int month;
+}
+
+Register Storage Classes :
+The register storage class is used to define local variables that should be stored
+in a instead of RAM.
+syntax:
+{
+register int miles;
+}
+
+
+Static Storage Classes:
+The static storage class instructs the compiler to keep a local variable in 
+existence during the life-time of the program instead of creating and destroying 
+it each time it comes into and goes out of scope.
+
+syntax:
+{
+static int miles;
+}
+
+
+Extern Storage Classes:
+The extern storage class is used to give a reference of a global variable that is
+visible ta all the program files.
+
+syntax:
+ extern int abc;
+{
+statements;
+}
+
+code :
+#include<stdio.h>
+int count;
+extern void write_extern();
+void main() {
+    count=5;
+    write_extern();
+}
+
+void write_extern(){
+    printf("count is %d\n",count);
+}
+--------------------------------------
+code: 
+#include<stdio.h>
+int x;
+
+void asc(){
+    auto int a=32;
+    printf("\n demostrating auto class \n \n");
+    printf("value of the variable 'a' " "declaring as auto : %d \n",a);
+    printf("-------------------------------------------------------");
+}
+
+void rsc(){
+    register char b='A';
+    printf("\n demostrating register class \n \n");
+    printf("value of the variable 'b' " "declaring as register : %d \n",b);
+    printf("-------------------------------------------------------");
+}
+void esc(){
+    extern int x;
+    printf("\n demostrating extern class \n \n");
+    printf("value of the variable 'x' " "declaring as extern : %d \n",x);
+    x=2;
+    printf("Modify value of the variable 'x' " "declaring as extern : %d \n",x);
+    
+    printf("-------------------------------------------------------");
+}
+
+void ssc(){
+    static int i=0;
+    printf("\n demostrating static class \n \n");
+    printf("\nloop started \n");
+    for(i=0;i<5;i++){
+        static int y=5;
+        int p=10;
+        y++;
+        p++;
+        printf("static i,y %d %d \n \n",i,y);
+        printf("non static i,p %d %d\n \n ",i,p);
+    }
+    printf("\nend  loop\n");
+    printf("-------------------------------------------------------");
+}
+
+void main(){
+    asc();
+    rsc();
+    esc();
+    ssc();
+}
+-----------------------------------
+Pointers:
+A pointer is  a variable whose value is the address of another
+variable, i.e. direct  address of the memory location. Like 
+any variable or constant, you must declare a pointer before using
+it to store any variable address.
+
+syntax:
+type *var-name;
+----------------------------
+code : 
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+    int n=25; //n address value
+    int *p; //pointer address
+    
+   p=&n;
+   printf("%x \n",p);
+   printf("%d \n",*p);
+}
+------------------------
+#include<stdio.h>
+void main()
+{
+    int var1;
+    char var2[10];
+    printf("address of var1 : %x\n",&var1);
+    printf("address of var2 : %x\n",&var2);
+}
+-----------------------
+int *ip; //pointer to  an integer 
+double *dp; //pointer to  an double
+float *fp; //pointer to  an float
+char * cp; //pointer to  an char
+
+code :
+
+#include <stdio.h>
+
+void main () {
+
+   int  var = 20;   /* actual variable declaration */
+   int  *ip;        /* pointer variable declaration */
+
+   ip = &var;  /* store address of var in pointer variable*/
+
+   printf("Address of var variable: %x\n", &var  );
+
+   /* address stored in pointer variable */
+   printf("Address stored in ip variable: %x\n", ip );
+
+   /* access the value using the pointer */
+   printf("Value of *ip variable: %d\n", *ip );
+}
+
+------------
+Null pointers:
+it is always a good practice to assign a null value to a pointer
+variable in case you do not have an exact address to be assigned.
+
+The null pointer is a constant with a value of zero defined in several standard
+libraries.
+
+code:
+#include <stdio.h>
+
+void main () {
+
+   int  *ptr=NULL;
+  
+   printf("Address of ptr: %x\n", ptr  ); 
+
+}
+--------------------------------
+pointer to pointer:
+
+
+#include <stdio.h>
+  
+
+void main()
+{
+    int var = 789;
+    int *ptr2;
+    int **ptr1;
+  
+    ptr2 = &var;
+      
+    
+    ptr1 = &ptr2;
+      
+    printf("Value of var = %d\n", var );
+    printf("Value of var using single pointer = %x\n", *ptr2 );
+    printf("Value of var using double pointer = %x\n", **ptr1);
+    
+} 
+-------------------------------------------------------------
+DMA(Dynamic memory allocation):
+it allocates memory  at runtime.
+stdlib.h
+they have 4 functions
+malloc()
+calloc()
+realloc()
+free()
+
+
+static
+------
+Memory allocated in compile time.
+can'be increment memory.
+arrays.
+
+dynamic:
+--------
+Runtime.
+memory increments in runtime.
+linkedlist
+
+malloc():
+---------
+single blocks
+syntax:
+ptvar=(datatype)malloc(bytesize)
+ex: ptr=(int *)malloc(n*sizeof(int));
+
+calloc():
+multiple block
+syntax: ptr=(datatype)calloc(number,bytesize)
+ex:ptr=(int *)malloc(n,sizeof(int));
+
+realloc(): it rellocates memory for already allocated ptr
+syntax:
+ptr=realloc(ptr,new-size);
+
+free(): free(ptr);
+
+code :
+malloc code:
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+    int n,i,*p,sum=0;
+    printf("enter num of elments: ");
+    scanf("%d\n",&n);
+    p=(int*)malloc(n*sizeof(int)); 
+    if(p==0)
+    {
+        printf("Sorry unable");
+        exit(0);
+    }
+    printf("enter element of array ");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",p+i);
+        sum+=*(p+i);
+    }
+}
+
+----------------------
+code :
+calloc code:
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+    int n,i,*p,sum=0;
+    printf("enter num of elments: ");
+    scanf("%d\n",&n);
+    p=(int*)calloc(n,sizeof(int)); 
+    if(p==0)
+    {
+        printf("Sorry unable");
+        exit(0);
+    }
+    printf("enter element of array ");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",p+i);
+        sum+=*(p+i);
+    }
+}
+-----------------------
+realloc code:
+
+programm1:
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+    int arr[2],i;
+    int *p = arr;
+    int *p_new;
+    arr[0]=10;
+    arr[1]=20;
+    //incorrent use of new_p = undefined behaviour
+    p_new=(int *)realloc(p, sizeof(int)*3);
+    *(p_new +2)=30;
+    
+    for(i=0;i<3;i++)
+        printf("%d",*(p_new + i) );
+}
+
+---------------
+program 2:
+
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+    int *p =(int *)malloc(sizeof(int)*2) ;
+    int i;
+    int *pnew;
+    *p=10;
+    *(p + 1)=20;
+    //incorrent use of new_p = undefined behaviour
+    pnew=(int *)realloc(p, sizeof(int)*3);
+    *(p + 2)=30;
+    
+    for(i=0;i<3;i++)
+        printf("%d\n",*(pnew + i));
+}
+----------------
+free() code : 
+syntax: void free(void *ptr)
+
+program :
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+    int *p=malloc(10 * sizeof(*p));
+    if(p != NULL){
+        *(p + 2) = 50;
+        printf("Value of the 2nd integer is %d", *(p + 2));
+    }
+    free(p);
+}
+
+-----------------------------------
+Structures:
+
+arrays(user datatype) allowed homegenious(similar) elements.
+structure is  another user defined datatype .it is to combine different types of 
+elements.
+structure are used to represent  record.
+for ex: employee: emp id,emp name,emp address,emp sal.
+        student: std id,std name,std address,std pho.
+
+defining or syntax:
+--------
+struct structure_name
+{
+member definition;
+member definition;
+};
+---------
+or 
+---
+struct structure_name
+{
+datatype name=value;
+datatype name=value;
+datatype name=value;
+datatype name=value;
+...... 
+};
+----------
+ex: 
+--
+struct employee
+{
+int emp_id;
+char emp_name[15];
+char emp_add[15];
+float emp_sal;
+}
+
+Accessing: it access a structure member by using member Access operator(.)
+
+emp.emp_id=123;
+emp.emp_name='nitish';
+emp.emp_id=10000; 
+--------------------
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+struct employee{
+int id;
+char name[20];
+float salary;
+};
+void main()
+{
+struct employee e1;
+e1.id=123;
+strcpy(e1.name, "umar");
+e1.salary=70000;
+printf("%d\n",e1.id);
+printf("%s\n",e1.name);
+printf("%f\n",e.salary);
+}
+--------------------------------
+multi emp code:
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+struct employee
+    {
+      int emp_id;
+      char emp_name[30];
+      float emp_salary;
+    }e1,e2,e3;
+void main()
+{
+    //struct employee e1,e2;
+    
+        e1.emp_id=123;
+        strcpy(e1.emp_name, "umar");
+        e1.emp_salary=50000;
+        printf(" %d",e1.emp_id);
+        printf("  %s",e1.emp_name);
+        printf(" %f\n",e1.emp_salary);
+        
+        e2.emp_id=124;
+        strcpy(e2.emp_name, "kumar");
+        e2.emp_salary=50000;
+        printf(" %d",e2.emp_id);
+        printf("  %s",e2.emp_name);
+        printf(" %f\n",e2.emp_salary);
+        
+        e3.emp_id=125;
+        strcpy(e3.emp_name, "kumari");
+        e3.emp_salary=50000;
+        printf(" %d",e3.emp_id);
+        printf("  %s",e3.emp_name);
+        printf(" %f\n",e3.emp_salary);
+    
+    
+}
+------------
+structure std code :
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+struct student
+{
+    int s_id;
+    char s_name[50];
+    char s_address[50];
+    long s_phno;
+}s1,s2;
+void main()
+{
+    s1.s_id=01;
+    strcpy(s1.s_name, "Raju");
+    strcpy(s1.s_address, "vijayawada");
+    s1.s_phno=9876543210;
+    printf("%d\t",s1.s_id);
+    printf("%s\t",s1.s_name);
+    printf("%s\t",s1.s_address);
+    printf("%ld \t\n",s1.s_phno);
+    
+    
+    s2.s_id=02;
+    strcpy(s2.s_name, "Raja");
+    strcpy(s2.s_address, "vijayawada");
+    s2.s_phno=9876543211;
+    printf("%d\t",s2.s_id);
+    printf("%s\t",s2.s_name);
+    printf("%s\t",s2.s_address);
+    printf("%ld\t\n",s2.s_phno);
+}
+
+----------------------------------------------------------
+Unions:
+
+arrays
+structures
+unions
+->A union is a special datatype  avaliable in c.
+->It allows to store different datatype in the same memory location.
+->it provides highest memory to a union.
+
+define or syntax:
+
+union unionname
+{
+member def1;
+member def2;
+........
+.......
+}[union var];
+------
+ex:
+
+union student
+{
+int stdno;
+char stdname[50];
+float stdper;
+}std;
+
+->the memory occupied by a union will be large enough to hold the 
+largest no.of the union.
+
+stdno-2  bytes
+stdname-1[20]- 20 bytes
+stdper - 4 bytes
+
+Allow:
+------
+(.) std.stdno=1234;
+    std.stdname="umar";
+    std.stdper=78.38;
+
+code:
+#include<stdio.h>
+#include<string.h>
+
+union data{
+    int i;
+    float f;
+    char str[50];
+}d1;
+
+void main()
+{
+   d1.i=1;
+   d1.f=1.1;
+   strcpy(d1.str, "umar");
+   
+    printf("memory size occupied by data int : %d \n",d1.i);
+    printf("memory size occupied by data float : %f \n",d1.f);
+    printf("memory size occupied by data string: %s \n",d1.str);
+    
+}
+---------------------------
+code2:
+
+#include<stdio.h>
+#include<string.h>
+
+union data{
+    int i;
+    float f;
+    char str[50];
+};
+
+void main()
+{
+    union data d1;
+    printf("memory size occupied by data : %ld \n",sizeof(d1));
+    
+}
+---------------------------------------------------------
+code 3:
+
+#include<stdio.h>
+#include<string.h>
+union car{
+    char name[50];
+    int price;
+}c1,c2,c3;
+void main()
+{   
+    c1.price=10000001;
+    c2.price=10000002;
+    c3.price=10000003;
+    
+    strcpy(c1.name, "venom");  
+    printf("car 1 %s \t",c1.name);
+    printf(" %d \n",c1.price);
+    
+    strcpy(c2.name, "bugatti");
+    printf("car 2 %s\t ",c2.name);
+    printf("%d \n",c2.price);
+   
+    strcpy(c3.name, "tuatara");
+    printf("car 3 %s\t",c3.name);
+    printf(" %d \n",c3.price);
+}
+---------------------------
+File Management:
+
+A file represents a sequence of  bytes, it being a text file or a binary file.
+In c provides it access on high-level functions as well as low-level functions.
+
+                                       file I/O
+                     high-level                               low-level
+              text              binary(0's & 1's)
+     formatter    unformatter  formatter    unformatter
+
+text is classified into two types
+1)sequential files
+2)random access files
+
+Operations:
+1)Naming [fopen()]
+2)opening [fopen()]
+3)closing [fclose()]
+4)reading [fgetc()]
+5)writing [fputs()]
+
+
+fopen():
+is to create a new file or to open an existing file.
+syntax:
+FILE *fopen(filename,mode);
+
+fclose():
+syntax:
+fclose(filepointer);
+
+fgetc():
+fgetc reads characters from files types 
+syntax:
+fgetc(filepointer);
+
+fputs or fputc : 
+fputc() is to write individual characters
+fputs() write strings to the files.
+
+
+file handling:
+it is used to store data permanently(contain data even after program exit)
+4 methods:
+
+1)fopen(): used to create and open the file
+2)fclose(): used to close the file
+3)fprintf(): used to write the data into the file
+4)fscanf():used to read the data from the file
+
+
+CODE:
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    FILE *fp;
+    fp=fopen("e:/file.txt","w");
+    fprintf(fp,"hello umar");
+    fclose(fp);
+}
+---------------------------------
+code:
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    FILE *fp;
+    char text[200];
+    
+    fp=fopen("e:/file.txt","r");
+    while(fscanf(fp,"%s",text)!=EOF){
+        printf("%s",text);
+    }
+    
+    fclose(fp);
+}
+-----------------------------The End -----------------------------------------
+
+
+
+
+
+
